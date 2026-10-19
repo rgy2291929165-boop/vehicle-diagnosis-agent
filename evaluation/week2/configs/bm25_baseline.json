@@ -1,0 +1,7 @@
+{
+  "name": "bm25_baseline",
+  "k1": 1.2,
+  "b": 0.75,
+  "tokenizer": "zh_character_plus_alnum",
+  "notes": "中文逐字分词，英文和数字连续保留；参数在开发集调优前固定。"
+}

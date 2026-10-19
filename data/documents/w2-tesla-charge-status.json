@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "document_id": "w2-tesla-charge-status",
+    "title": "Model 3 充电口状态灯",
+    "source": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+    "source_type": "official_summary",
+    "imported_at": "2026-09-14T06:38:56.861823Z",
+    "char_count": 122,
+    "source_version": "Model 3 Owner Manual 2024+, North America; retrieved 2026-09-14",
+    "retrieved_at": "2026-09-14",
+    "translation_note": "基于官方英文页面的中文意译；非原文复制；车型与地区范围见版本字段"
+  },
+  "content": "Model 3 充电口灯常亮蓝色表示插头已连接，但充电尚未开始；预约充电时可出现这种状态。\n充电口灯闪烁绿色表示正在充电；常亮绿色表示充电完成。\n充电口灯常亮琥珀色表示接头未完全插入。\n充电口灯红色表示检测到故障且充电已停止，应查看触摸屏警报。"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "vector_baseline",
+  "model": "BAAI/bge-small-zh-v1.5",
+  "model_revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "normalize_embeddings": true,
+  "retrieval_metric": "cosine_similarity_via_dot_product",
+  "notes": "仅使用本地模型缓存；评测脚本会拒绝下载模型。"
+}

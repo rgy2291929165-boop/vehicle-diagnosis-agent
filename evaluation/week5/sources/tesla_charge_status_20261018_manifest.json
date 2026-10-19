@@ -1,0 +1,58 @@
+{
+  "source_url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+  "retrieved_date_local": "2026-10-18",
+  "timezone": "Asia/Shanghai",
+  "artifact_prepared_at": "2026-10-18T11:42:34+08:00",
+  "source_title": "Model 3 Owner's Manual / Charging Instructions",
+  "section": "Charging Instructions / Charge Port Light / RED",
+  "capture_type": "coach_prepared_excerpt_from_web_tool_extraction",
+  "original_full_html_downloaded": false,
+  "official_pdf_downloaded": false,
+  "web_tool_official_text_access": "success",
+  "direct_download_attempts": [
+    {
+      "environment": "sandbox",
+      "result": "DNS_resolution_failed"
+    },
+    {
+      "environment": "authorized_network",
+      "http_status": 403,
+      "body_saved": false
+    }
+  ],
+  "defuddle_available": false,
+  "excerpt": {
+    "filename": "tesla_charge_status_20261018_excerpt.html",
+    "sha256": "bda8aeefb935d934367dc890121002134c5d1d97b239e92a20ed6739f67fccee",
+    "offline_readable": true
+  },
+  "card": {
+    "filename": "learning/week5/source_review_charge_status.md",
+    "sha256": "2fc1985d57fca5c78d9d2ff17c3416288012a57cde7d1643f614a7a57b6ef140"
+  },
+  "download_attempt_headers": {
+    "filename": "tesla_charge_status_20261018_download_attempt_headers.txt",
+    "sha256": "98d10ccfce1b25777eceba4af6a0c20e0c33910719268f11f97536d1734f63f6",
+    "is_content_evidence": false
+  },
+  "local_summary_sha256": "47874503b688f4f6d659cff86eaa56698eadad11c6e6fa19222c8df9b3b3f1e5",
+  "scope_verified": [
+    "model_name_in_page_title",
+    "English_RED_entry",
+    "local_summary_RED_sentence_consistency"
+  ],
+  "scope_unknown": [
+    "model_year_range",
+    "manual_revision",
+    "applicable_vehicle_software_version",
+    "publication_or_revision_date"
+  ],
+  "learner_understanding": "passed_2026-10-18",
+  "protected_files_before": {
+    "data/documents/w2-tesla-charge-status.json": "47874503b688f4f6d659cff86eaa56698eadad11c6e6fa19222c8df9b3b3f1e5",
+    "evaluation/week2/corpus_manifest.csv": "b8bc8a70d2f51893d89519a044390fc0455b323f2e301af52c8b62ed8cf6c219",
+    "evaluation/week2/splits.json": "989ae277550367a3ff8b9e5309986c39a2dade96bce96ff7a5d253309e2ba96d",
+    "evaluation/week2/freeze_manifest.json": "16e3d44559643dba6760f29ef5e25a0a462c43eb7dcd133e957bab9f74de26ca",
+    "evaluation/week2/questions_draft.jsonl": "4f7bcfbcd97d5353a3546e899acda1b51e16f178acd48ccf315183199f37975c"
+  }
+}

@@ -1,0 +1,565 @@
+{
+  "run": {
+    "created_at": "2026-09-14T09:26:12.667663+00:00",
+    "split": "development",
+    "dataset_version": "week2-v1.0",
+    "retriever": "bm25_baseline",
+    "retrieval_depth": 3,
+    "config_sha256": "05616da91afd7d0e63e822aff500ee8dcee6ee7dff05b2495742a6427a8df7ab",
+    "model": "qwen3.7-flash",
+    "answer_prompt_version": "week2-answer-v4"
+  },
+  "rubric": {
+    "citation_correct": "引用是否属于标注文档",
+    "citation_has_complete_evidence": "引用是否包含完整标注证据片段",
+    "unsupported_claim": "人工判断；true 表示有资料不支持的关键主张",
+    "no_evidence_refusal_correct": "无证据题是否只输出 NO_EVIDENCE",
+    "format_valid": "有证据题须有内联片段引用；无证据题不得有引用"
+  },
+  "results": [
+    {
+      "id": "W2-001",
+      "question": "Model 3 接上充电枪后灯一直是蓝色，这是否代表已经在充电？",
+      "answerable": true,
+      "answer": "不是，Model 3 充电口灯常亮蓝色表示插头已连接，但充电尚未开始 [来源: w2-tesla-charge-status:0]。",
+      "elapsed_ms": 1731.292,
+      "retrieval_ranked_chunk_ids": [
+        "w2-tesla-charge-status:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-cold-weather:1"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-tesla-charge-status:0",
+          "document_id": "w2-tesla-charge-status",
+          "text": "Model 3 充电口灯常亮蓝色表示插头已连接，但充电尚未开始；预约充电时可出现这种状态。 充电口灯闪烁绿色表示正在充电；常亮绿色表示充电完成。 充电口灯常亮琥珀色表示接头未完全插入。 充电口灯红色表示检测到故障且充电已停止，应查看触摸屏警报。"
+        },
+        {
+          "chunk_id": "w2-tesla-charge-workflow:0",
+          "document_id": "w2-tesla-charge-workflow",
+          "text": "Model 3 充电口位于车辆左侧、后尾灯组件的一扇门后。使用 Tesla 充电线时，车辆处于 P 挡后可按一下充电线按钮打开充电口门。不要强行打开充电口门。使用公共充电站时，应先将合适的适配器插入车辆充电口，再把充电站的连接器接到适配器上。连接器正确插入后，车辆会锁住连接器并切换至 P 挡；如电池需要加热或冷却，充电开始前可能有延迟。充电时不要将高压液体喷向充电口，例如不要用高压清洗机冲洗。为防"
+        },
+        {
+          "chunk_id": "w2-tesla-cold-weather:1",
+          "document_id": "w2-tesla-cold-weather",
+          "text": "置可帮助预防充电口锁扣冻结。锁扣冻结时可能无法锁住充电线，但即使锁扣没有扣合，车辆仍可能以较慢的交流充电速率充电。电池因低温导致部分存储能量暂不可用时，触摸屏会显示蓝色雪花图标，电池表中不可用部分显示为蓝色。蓝色雪花图标出现时，再生制动、加速和充电速率可能受限；电池充分升温后图标消失。寒冷天气驾驶后，若车辆不用，Tesla 建议保持接入充电设备，以利用充电设备而非电池本身维持电池温度。"
+        }
+      ],
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "cited_chunk_ids": [
+        "w2-tesla-charge-status:0"
+      ],
+      "retrieved_chunk_ids": [
+        "w2-tesla-charge-status:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-cold-weather:1"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": true,
+      "citation_has_complete_evidence": true,
+      "no_evidence_refusal_correct": null,
+      "format_valid": true
+    },
+    {
+      "id": "W2-006",
+      "question": "Model 3 的 CP_a054 提示出现时，直流快充会受到什么影响？",
+      "answerable": true,
+      "answer": "直流快充不可用 [来源: w2-tesla-charge-alerts:0]",
+      "elapsed_ms": 992.467,
+      "retrieval_ranked_chunk_ids": [
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-scheduled-charge:0"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-tesla-charge-alerts:0",
+          "document_id": "w2-tesla-charge-alerts",
+          "text": "Model 3 出现 CP_a053 时，充电设备尚未就绪；可能是充电站无电，也可能是站车之间的控制导引信号中断。 Model 3 出现 CP_a054 时，充电口锁扣未扣合；交流充电可能被限制到 16A，直流快充或超充不可用。"
+        },
+        {
+          "chunk_id": "w2-tesla-submerged-vehicle:0",
+          "document_id": "w2-tesla-submerged-vehicle",
+          "text": "若预报可能发生浸水且可以安全移车，Tesla 建议将 Model 3 移到无风险地点或更高处。考虑到充电基础设施也可能受影响，Tesla 建议在浸水风险前将车辆充至 100%。如果无法移到无洪水风险的地点，车辆应先与充电设备断开连接。若无法移车，降低电量可通过提前行驶并保持不接电，或开启空调／Keep Climate On 来实现。如果车辆有起火、冒烟、明显爆裂或嘶嘶声、或发热迹象，应立即远离并联"
+        },
+        {
+          "chunk_id": "w2-tesla-scheduled-charge:0",
+          "document_id": "w2-tesla-scheduled-charge",
+          "text": "Model 3 会按每个创建预约的地点自动保存该地点的预约设置。选择 Current Location 创建的预约，只有回到大致相同的物理位置时才可使用。预约充电不能用于包括 Tesla Supercharger 在内的快速充电设备；在快充设备上创建的充电预约会被忽略。若未开启 Repeat Weekly，车辆只执行一次预约，之后会停用该预约，直到用户手动重新启用。若车辆在预约充电 End by "
+        }
+      ],
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "cited_chunk_ids": [
+        "w2-tesla-charge-alerts:0"
+      ],
+      "retrieved_chunk_ids": [
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-scheduled-charge:0"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": true,
+      "citation_has_complete_evidence": true,
+      "no_evidence_refusal_correct": null,
+      "format_valid": true
+    },
+    {
+      "id": "W2-011",
+      "question": "Model 3 屏幕提示冷却液液位低，车主应自行打开加注盖补液吗？",
+      "answerable": true,
+      "answer": "不应自行打开冷却液加注盖或加液 [来源: w2-tesla-battery-info:0]",
+      "elapsed_ms": 1344.66,
+      "retrieval_ranked_chunk_ids": [
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-status:0"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-tesla-battery-info:0",
+          "document_id": "w2-tesla-battery-info",
+          "text": "Model 3 电池不需要车主维护；触摸屏提示冷却液液位低时，应通过移动应用预约服务，不应自行打开冷却液加注盖或加液。 电池电量降至 0% 后如果长期不接充电设备，低压电池可能需要搭电或更换，并可能损伤高压电池。"
+        },
+        {
+          "chunk_id": "w2-tesla-charge-workflow:0",
+          "document_id": "w2-tesla-charge-workflow",
+          "text": "Model 3 充电口位于车辆左侧、后尾灯组件的一扇门后。使用 Tesla 充电线时，车辆处于 P 挡后可按一下充电线按钮打开充电口门。不要强行打开充电口门。使用公共充电站时，应先将合适的适配器插入车辆充电口，再把充电站的连接器接到适配器上。连接器正确插入后，车辆会锁住连接器并切换至 P 挡；如电池需要加热或冷却，充电开始前可能有延迟。充电时不要将高压液体喷向充电口，例如不要用高压清洗机冲洗。为防"
+        },
+        {
+          "chunk_id": "w2-tesla-charge-status:0",
+          "document_id": "w2-tesla-charge-status",
+          "text": "Model 3 充电口灯常亮蓝色表示插头已连接，但充电尚未开始；预约充电时可出现这种状态。 充电口灯闪烁绿色表示正在充电；常亮绿色表示充电完成。 充电口灯常亮琥珀色表示接头未完全插入。 充电口灯红色表示检测到故障且充电已停止，应查看触摸屏警报。"
+        }
+      ],
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "cited_chunk_ids": [
+        "w2-tesla-battery-info:0"
+      ],
+      "retrieved_chunk_ids": [
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-status:0"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": true,
+      "citation_has_complete_evidence": true,
+      "no_evidence_refusal_correct": null,
+      "format_valid": true
+    },
+    {
+      "id": "W2-024",
+      "question": "怎样设置能帮助避免充电口锁扣在寒冷中冻结？",
+      "answerable": true,
+      "answer": "使用 Schedule 设置可帮助预防充电口锁扣冻结 [来源: w2-tesla-cold-weather:0]。",
+      "elapsed_ms": 1109.187,
+      "retrieval_ranked_chunk_ids": [
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-charge-alerts:0"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-tesla-cold-weather:0",
+          "document_id": "w2-tesla-cold-weather",
+          "text": "Tesla 建议在出发前至少 30–45 分钟启用空调设置进行预处理，实际所需时间会受室外温度等因素影响。充电口锁扣冻结且充电线拔不出时，可在车辆屏幕选择 Controls > Service > Inlet Heater。也可通过手机应用启用 Defrost Car，以融化充电口锁扣上的冰。使用 Schedule 设置可帮助预防充电口锁扣冻结。锁扣冻结时可能无法锁住充电线，但即使锁扣没有扣合，车"
+        },
+        {
+          "chunk_id": "w2-tesla-cold-weather:1",
+          "document_id": "w2-tesla-cold-weather",
+          "text": "置可帮助预防充电口锁扣冻结。锁扣冻结时可能无法锁住充电线，但即使锁扣没有扣合，车辆仍可能以较慢的交流充电速率充电。电池因低温导致部分存储能量暂不可用时，触摸屏会显示蓝色雪花图标，电池表中不可用部分显示为蓝色。蓝色雪花图标出现时，再生制动、加速和充电速率可能受限；电池充分升温后图标消失。寒冷天气驾驶后，若车辆不用，Tesla 建议保持接入充电设备，以利用充电设备而非电池本身维持电池温度。"
+        },
+        {
+          "chunk_id": "w2-tesla-charge-alerts:0",
+          "document_id": "w2-tesla-charge-alerts",
+          "text": "Model 3 出现 CP_a053 时，充电设备尚未就绪；可能是充电站无电，也可能是站车之间的控制导引信号中断。 Model 3 出现 CP_a054 时，充电口锁扣未扣合；交流充电可能被限制到 16A，直流快充或超充不可用。"
+        }
+      ],
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "cited_chunk_ids": [
+        "w2-tesla-cold-weather:0"
+      ],
+      "retrieved_chunk_ids": [
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-charge-alerts:0"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": true,
+      "citation_has_complete_evidence": true,
+      "no_evidence_refusal_correct": null,
+      "format_valid": true
+    },
+    {
+      "id": "W2-030",
+      "question": "在 Current Location 创建的预约，到别的地点还能直接使用吗？",
+      "answerable": true,
+      "answer": "不能。选择 Current Location 创建的预约，只有回到大致相同的物理位置时才可使用 [来源: w2-tesla-scheduled-charge:0]",
+      "elapsed_ms": 1961.155,
+      "retrieval_ranked_chunk_ids": [
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-submerged-vehicle:0"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-tesla-scheduled-charge:0",
+          "document_id": "w2-tesla-scheduled-charge",
+          "text": "Model 3 会按每个创建预约的地点自动保存该地点的预约设置。选择 Current Location 创建的预约，只有回到大致相同的物理位置时才可使用。预约充电不能用于包括 Tesla Supercharger 在内的快速充电设备；在快充设备上创建的充电预约会被忽略。若未开启 Repeat Weekly，车辆只执行一次预约，之后会停用该预约，直到用户手动重新启用。若车辆在预约充电 End by "
+        },
+        {
+          "chunk_id": "w2-tesla-scheduled-charge:1",
+          "document_id": "w2-tesla-scheduled-charge",
+          "text": "次预约，之后会停用该预约，直到用户手动重新启用。若车辆在预约充电 End by 时间后的六小时内插入充电枪，且没有其他预约，车辆不会自动开始充电。将充电结束时间设为计划出发时间，即使当地没有峰谷电价，也可减少能耗。预处理功能会自动计算何时启动，以确保在设定出发时间前车厢和电池均已完成预处理。若不安排预处理，车辆只会在电池低温到无法充电时为充电而加热电池，不会预处理车厢空调。"
+        },
+        {
+          "chunk_id": "w2-tesla-submerged-vehicle:0",
+          "document_id": "w2-tesla-submerged-vehicle",
+          "text": "若预报可能发生浸水且可以安全移车，Tesla 建议将 Model 3 移到无风险地点或更高处。考虑到充电基础设施也可能受影响，Tesla 建议在浸水风险前将车辆充至 100%。如果无法移到无洪水风险的地点，车辆应先与充电设备断开连接。若无法移车，降低电量可通过提前行驶并保持不接电，或开启空调／Keep Climate On 来实现。如果车辆有起火、冒烟、明显爆裂或嘶嘶声、或发热迹象，应立即远离并联"
+        }
+      ],
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "cited_chunk_ids": [
+        "w2-tesla-scheduled-charge:0"
+      ],
+      "retrieved_chunk_ids": [
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-submerged-vehicle:0"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": true,
+      "citation_has_complete_evidence": true,
+      "no_evidence_refusal_correct": null,
+      "format_valid": true
+    },
+    {
+      "id": "W2-042",
+      "question": "浸水后的 Model 3 在什么条件满足前不应尝试操作？",
+      "answerable": true,
+      "answer": "车辆在不再浸水且可以安全接近后，未由授权维修店检查前 [来源: w2-tesla-submerged-vehicle:1]",
+      "elapsed_ms": 1147.735,
+      "retrieval_ranked_chunk_ids": [
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-submerged-vehicle:0"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-tesla-submerged-vehicle:1",
+          "document_id": "w2-tesla-submerged-vehicle",
+          "text": "On 来实现。如果车辆有起火、冒烟、明显爆裂或嘶嘶声、或发热迹象，应立即远离并联系当地紧急救援人员。车辆在不再浸水且可以安全接近后，未由授权维修店检查前，不应尝试操作车辆。浸水后需要拖移时，应使车辆距离建筑物或其他可燃物至少 50 英尺（15 米）。浸水后应按事故车辆对待并联系保险公司。"
+        },
+        {
+          "chunk_id": "w2-tesla-battery-health:0",
+          "document_id": "w2-tesla-battery-health",
+          "text": "Model 3 启动电池健康测试需要接入功率至少 5 kW 的交流充电器。 测试前车辆须处于 P 挡，电量低于 20%，没有正在进行的软件更新，也没有电池或热管理相关活动警报。 电池健康测试期间空调系统停用，不应把乘员独自留在车内。"
+        },
+        {
+          "chunk_id": "w2-tesla-submerged-vehicle:0",
+          "document_id": "w2-tesla-submerged-vehicle",
+          "text": "若预报可能发生浸水且可以安全移车，Tesla 建议将 Model 3 移到无风险地点或更高处。考虑到充电基础设施也可能受影响，Tesla 建议在浸水风险前将车辆充至 100%。如果无法移到无洪水风险的地点，车辆应先与充电设备断开连接。若无法移车，降低电量可通过提前行驶并保持不接电，或开启空调／Keep Climate On 来实现。如果车辆有起火、冒烟、明显爆裂或嘶嘶声、或发热迹象，应立即远离并联"
+        }
+      ],
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "cited_chunk_ids": [
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "retrieved_chunk_ids": [
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-submerged-vehicle:0"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": true,
+      "citation_has_complete_evidence": true,
+      "no_evidence_refusal_correct": null,
+      "format_valid": true
+    },
+    {
+      "id": "W2-044",
+      "question": "Model 3 浸水后，资料要求怎样处理保险事宜？",
+      "answerable": true,
+      "answer": "浸水后应按事故车辆对待并联系保险公司 [来源: w2-tesla-submerged-vehicle:1]",
+      "elapsed_ms": 955.901,
+      "retrieval_ranked_chunk_ids": [
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-nhtsa-flood-safety:0"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-tesla-submerged-vehicle:0",
+          "document_id": "w2-tesla-submerged-vehicle",
+          "text": "若预报可能发生浸水且可以安全移车，Tesla 建议将 Model 3 移到无风险地点或更高处。考虑到充电基础设施也可能受影响，Tesla 建议在浸水风险前将车辆充至 100%。如果无法移到无洪水风险的地点，车辆应先与充电设备断开连接。若无法移车，降低电量可通过提前行驶并保持不接电，或开启空调／Keep Climate On 来实现。如果车辆有起火、冒烟、明显爆裂或嘶嘶声、或发热迹象，应立即远离并联"
+        },
+        {
+          "chunk_id": "w2-tesla-submerged-vehicle:1",
+          "document_id": "w2-tesla-submerged-vehicle",
+          "text": "On 来实现。如果车辆有起火、冒烟、明显爆裂或嘶嘶声、或发热迹象，应立即远离并联系当地紧急救援人员。车辆在不再浸水且可以安全接近后，未由授权维修店检查前，不应尝试操作车辆。浸水后需要拖移时，应使车辆距离建筑物或其他可燃物至少 50 英尺（15 米）。浸水后应按事故车辆对待并联系保险公司。"
+        },
+        {
+          "chunk_id": "w2-nhtsa-flood-safety:0",
+          "document_id": "w2-nhtsa-flood-safety",
+          "text": "NHTSA 指出，被洪水浸泡的电动车高压电池可能存在高压和短路，带来触电与起火风险。 NHTSA 建议车主不要自行维修受损的电动车或混合动力车，应联系授权服务中心或厂家代表。"
+        }
+      ],
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "cited_chunk_ids": [
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "retrieved_chunk_ids": [
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-nhtsa-flood-safety:0"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": true,
+      "citation_has_complete_evidence": true,
+      "no_evidence_refusal_correct": null,
+      "format_valid": true
+    },
+    {
+      "id": "W2-050",
+      "question": "电池温度不合适时，为什么插好充电枪后不一定立刻开始充电？",
+      "answerable": true,
+      "answer": "若电池需要加热或冷却，充电开始前可能有延迟 [来源: w2-tesla-charge-workflow:0]。",
+      "elapsed_ms": 1504.026,
+      "retrieval_ranked_chunk_ids": [
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-hot-weather:0"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-tesla-charge-workflow:0",
+          "document_id": "w2-tesla-charge-workflow",
+          "text": "Model 3 充电口位于车辆左侧、后尾灯组件的一扇门后。使用 Tesla 充电线时，车辆处于 P 挡后可按一下充电线按钮打开充电口门。不要强行打开充电口门。使用公共充电站时，应先将合适的适配器插入车辆充电口，再把充电站的连接器接到适配器上。连接器正确插入后，车辆会锁住连接器并切换至 P 挡；如电池需要加热或冷却，充电开始前可能有延迟。充电时不要将高压液体喷向充电口，例如不要用高压清洗机冲洗。为防"
+        },
+        {
+          "chunk_id": "w2-tesla-scheduled-charge:1",
+          "document_id": "w2-tesla-scheduled-charge",
+          "text": "次预约，之后会停用该预约，直到用户手动重新启用。若车辆在预约充电 End by 时间后的六小时内插入充电枪，且没有其他预约，车辆不会自动开始充电。将充电结束时间设为计划出发时间，即使当地没有峰谷电价，也可减少能耗。预处理功能会自动计算何时启动，以确保在设定出发时间前车厢和电池均已完成预处理。若不安排预处理，车辆只会在电池低温到无法充电时为充电而加热电池，不会预处理车厢空调。"
+        },
+        {
+          "chunk_id": "w2-tesla-hot-weather:0",
+          "document_id": "w2-tesla-hot-weather",
+          "text": "为获得更合适的电池温度和充电条件，Tesla 建议使用行程规划，至少在到达充电站前 30–45 分钟导航至该站。"
+        }
+      ],
+      "expected_status": "ok",
+      "actual_status": "ok",
+      "cited_chunk_ids": [
+        "w2-tesla-charge-workflow:0"
+      ],
+      "retrieved_chunk_ids": [
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-hot-weather:0"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": true,
+      "citation_has_complete_evidence": true,
+      "no_evidence_refusal_correct": null,
+      "format_valid": true
+    },
+    {
+      "id": "W2-017",
+      "question": "2024+ Model 3 的高压电池冷却液标准加注量是多少升？",
+      "answerable": false,
+      "answer": "NO_EVIDENCE",
+      "elapsed_ms": 1613.133,
+      "retrieval_ranked_chunk_ids": [
+        "w2-tesla-battery-info:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-charge-workflow:0"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-tesla-battery-info:0",
+          "document_id": "w2-tesla-battery-info",
+          "text": "Model 3 电池不需要车主维护；触摸屏提示冷却液液位低时，应通过移动应用预约服务，不应自行打开冷却液加注盖或加液。 电池电量降至 0% 后如果长期不接充电设备，低压电池可能需要搭电或更换，并可能损伤高压电池。"
+        },
+        {
+          "chunk_id": "w2-tesla-cold-weather:1",
+          "document_id": "w2-tesla-cold-weather",
+          "text": "置可帮助预防充电口锁扣冻结。锁扣冻结时可能无法锁住充电线，但即使锁扣没有扣合，车辆仍可能以较慢的交流充电速率充电。电池因低温导致部分存储能量暂不可用时，触摸屏会显示蓝色雪花图标，电池表中不可用部分显示为蓝色。蓝色雪花图标出现时，再生制动、加速和充电速率可能受限；电池充分升温后图标消失。寒冷天气驾驶后，若车辆不用，Tesla 建议保持接入充电设备，以利用充电设备而非电池本身维持电池温度。"
+        },
+        {
+          "chunk_id": "w2-tesla-charge-workflow:0",
+          "document_id": "w2-tesla-charge-workflow",
+          "text": "Model 3 充电口位于车辆左侧、后尾灯组件的一扇门后。使用 Tesla 充电线时，车辆处于 P 挡后可按一下充电线按钮打开充电口门。不要强行打开充电口门。使用公共充电站时，应先将合适的适配器插入车辆充电口，再把充电站的连接器接到适配器上。连接器正确插入后，车辆会锁住连接器并切换至 P 挡；如电池需要加热或冷却，充电开始前可能有延迟。充电时不要将高压液体喷向充电口，例如不要用高压清洗机冲洗。为防"
+        }
+      ],
+      "expected_status": "no_evidence",
+      "actual_status": "no_evidence",
+      "cited_chunk_ids": [],
+      "retrieved_chunk_ids": [
+        "w2-tesla-battery-info:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-charge-workflow:0"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": null,
+      "citation_has_complete_evidence": null,
+      "no_evidence_refusal_correct": true,
+      "format_valid": true
+    },
+    {
+      "id": "W2-018",
+      "question": "Model 3 的 CP_a054 故障对应的充电口锁扣固定螺栓扭矩是多少 N·m？",
+      "answerable": false,
+      "answer": "NO_EVIDENCE",
+      "elapsed_ms": 1006.548,
+      "retrieval_ranked_chunk_ids": [
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-cold-weather:0"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-tesla-charge-alerts:0",
+          "document_id": "w2-tesla-charge-alerts",
+          "text": "Model 3 出现 CP_a053 时，充电设备尚未就绪；可能是充电站无电，也可能是站车之间的控制导引信号中断。 Model 3 出现 CP_a054 时，充电口锁扣未扣合；交流充电可能被限制到 16A，直流快充或超充不可用。"
+        },
+        {
+          "chunk_id": "w2-tesla-charge-status:0",
+          "document_id": "w2-tesla-charge-status",
+          "text": "Model 3 充电口灯常亮蓝色表示插头已连接，但充电尚未开始；预约充电时可出现这种状态。 充电口灯闪烁绿色表示正在充电；常亮绿色表示充电完成。 充电口灯常亮琥珀色表示接头未完全插入。 充电口灯红色表示检测到故障且充电已停止，应查看触摸屏警报。"
+        },
+        {
+          "chunk_id": "w2-tesla-cold-weather:0",
+          "document_id": "w2-tesla-cold-weather",
+          "text": "Tesla 建议在出发前至少 30–45 分钟启用空调设置进行预处理，实际所需时间会受室外温度等因素影响。充电口锁扣冻结且充电线拔不出时，可在车辆屏幕选择 Controls > Service > Inlet Heater。也可通过手机应用启用 Defrost Car，以融化充电口锁扣上的冰。使用 Schedule 设置可帮助预防充电口锁扣冻结。锁扣冻结时可能无法锁住充电线，但即使锁扣没有扣合，车"
+        }
+      ],
+      "expected_status": "no_evidence",
+      "actual_status": "no_evidence",
+      "cited_chunk_ids": [],
+      "retrieved_chunk_ids": [
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-cold-weather:0"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": null,
+      "citation_has_complete_evidence": null,
+      "no_evidence_refusal_correct": true,
+      "format_valid": true
+    },
+    {
+      "id": "W2-019",
+      "question": "BMS_a107 的完整高压维修工序和每一步测量数值是什么？",
+      "answerable": false,
+      "answer": "NO_EVIDENCE",
+      "elapsed_ms": 1039.45,
+      "retrieval_ranked_chunk_ids": [
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-hv-components:0"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-nhtsa-flood-safety:0",
+          "document_id": "w2-nhtsa-flood-safety",
+          "text": "NHTSA 指出，被洪水浸泡的电动车高压电池可能存在高压和短路，带来触电与起火风险。 NHTSA 建议车主不要自行维修受损的电动车或混合动力车，应联系授权服务中心或厂家代表。"
+        },
+        {
+          "chunk_id": "w2-tesla-normal-sounds:0",
+          "document_id": "w2-tesla-normal-sounds",
+          "text": "超充时风扇会工作以控制电池温度，天气热时声音可能更大。 超充时车底传来的咔哒或砰响可能来自高压电池内金属部件随环境温度变化而膨胀或收缩。"
+        },
+        {
+          "chunk_id": "w2-tesla-hv-components:0",
+          "document_id": "w2-tesla-hv-components",
+          "text": "Model 3 高压系统没有车主可自行维护的部件；不要拆卸、更换高压部件、线缆或连接器。 Model 3 的高压线缆通常为橙色，便于识别。"
+        }
+      ],
+      "expected_status": "no_evidence",
+      "actual_status": "no_evidence",
+      "cited_chunk_ids": [],
+      "retrieved_chunk_ids": [
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-hv-components:0"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": null,
+      "citation_has_complete_evidence": null,
+      "no_evidence_refusal_correct": true,
+      "format_valid": true
+    },
+    {
+      "id": "W2-020",
+      "question": "哪一台充电桩的序列号导致了这辆 Model 3 的 CP_a053？",
+      "answerable": false,
+      "answer": "NO_EVIDENCE",
+      "elapsed_ms": 821.24,
+      "retrieval_ranked_chunk_ids": [
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-charge-workflow:0"
+      ],
+      "retrieved_chunks": [
+        {
+          "chunk_id": "w2-tesla-charge-alerts:0",
+          "document_id": "w2-tesla-charge-alerts",
+          "text": "Model 3 出现 CP_a053 时，充电设备尚未就绪；可能是充电站无电，也可能是站车之间的控制导引信号中断。 Model 3 出现 CP_a054 时，充电口锁扣未扣合；交流充电可能被限制到 16A，直流快充或超充不可用。"
+        },
+        {
+          "chunk_id": "w2-tesla-scheduled-charge:0",
+          "document_id": "w2-tesla-scheduled-charge",
+          "text": "Model 3 会按每个创建预约的地点自动保存该地点的预约设置。选择 Current Location 创建的预约，只有回到大致相同的物理位置时才可使用。预约充电不能用于包括 Tesla Supercharger 在内的快速充电设备；在快充设备上创建的充电预约会被忽略。若未开启 Repeat Weekly，车辆只执行一次预约，之后会停用该预约，直到用户手动重新启用。若车辆在预约充电 End by "
+        },
+        {
+          "chunk_id": "w2-tesla-charge-workflow:0",
+          "document_id": "w2-tesla-charge-workflow",
+          "text": "Model 3 充电口位于车辆左侧、后尾灯组件的一扇门后。使用 Tesla 充电线时，车辆处于 P 挡后可按一下充电线按钮打开充电口门。不要强行打开充电口门。使用公共充电站时，应先将合适的适配器插入车辆充电口，再把充电站的连接器接到适配器上。连接器正确插入后，车辆会锁住连接器并切换至 P 挡；如电池需要加热或冷却，充电开始前可能有延迟。充电时不要将高压液体喷向充电口，例如不要用高压清洗机冲洗。为防"
+        }
+      ],
+      "expected_status": "no_evidence",
+      "actual_status": "no_evidence",
+      "cited_chunk_ids": [],
+      "retrieved_chunk_ids": [
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-charge-workflow:0"
+      ],
+      "unsupported_claim": null,
+      "manual_review_required": true,
+      "manual_review_note": null,
+      "citation_correct": null,
+      "citation_has_complete_evidence": null,
+      "no_evidence_refusal_correct": true,
+      "format_valid": true
+    }
+  ]
+}

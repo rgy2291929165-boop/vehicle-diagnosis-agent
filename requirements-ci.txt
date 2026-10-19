@@ -1,0 +1,7 @@
+# Agent CI；早期向量 RAG 的完整测试使用原 requirements.txt。
+-r requirements-agent.txt
+-r requirements-agent.lock.txt
+pytest==9.1.1
+iniconfig==2.3.0
+pluggy==1.6.0
+Pygments==2.21.0

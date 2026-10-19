@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "document_id": "w2-tesla-battery-health",
+    "title": "Model 3 电池健康测试条件与限制",
+    "source": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-B9807218-7291-4F68-9AFF-7C525CF498F3.html",
+    "source_type": "official_summary",
+    "imported_at": "2026-09-14T06:38:56.861823Z",
+    "char_count": 116,
+    "source_version": "Model 3 Owner Manual 2024+, North America; retrieved 2026-09-14",
+    "retrieved_at": "2026-09-14",
+    "translation_note": "基于官方英文页面的中文意译；非原文复制；车型与地区范围见版本字段"
+  },
+  "content": "Model 3 启动电池健康测试需要接入功率至少 5 kW 的交流充电器。\n测试前车辆须处于 P 挡，电量低于 20%，没有正在进行的软件更新，也没有电池或热管理相关活动警报。\n电池健康测试期间空调系统停用，不应把乘员独自留在车内。"
+}

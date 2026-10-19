@@ -1,0 +1,40 @@
+{
+  "version": "week3-workflow-v1",
+  "scope": "模拟工具、候选检索、引用与工作流控制；不评估实车诊断正确率",
+  "total": 20,
+  "passed": 20,
+  "failed": 0,
+  "failed_cases": [],
+  "corpus_groups": {
+    "real_corpus_input": {
+      "total": 11,
+      "passed": 11
+    },
+    "fixture_corpus_input": {
+      "total": 9,
+      "passed": 9
+    }
+  },
+  "real_documents": 12,
+  "real_chunks": 16,
+  "cases_sha256": "5ce9123b1700abdd1f02c289a55c7ead14bb9cf6f7f67cd5815422b2acf99b85",
+  "real_corpus_sha256": "7f8378753c1bb0041e6173a9fc96f2d432f4e123a3ebc51852e85d253fd6d329",
+  "runner_sha256": "f1b2ce245155ca2d50425fe39106f939f353b140675e346f38f66fc5b05118bb",
+  "code_sha256": {
+    "diagnosis_graph.py": "6ed2f392ece9592e44df75b95de386a8d96c022f18a0a60ccf9778bb5f545edf",
+    "diagnosis_state.py": "d785bb206152e8823a3db168b3c85d51aeb9daa34baa36ec15de2cf2c646fcd2",
+    "diagnostic_tools.py": "a0a1d8abd6eae60455189ec8e3ab5b777e0d81fab8f09c7f1e27a07144632a19",
+    "tool_guard.py": "7b2a4ae4b0c86e32bcbce74614e75b04abce2c81eb8fc6c24e7a5c678561b585",
+    "tool_planner.py": "13e8910d2378b6f8068c44b3dfb543aa19fc13ed5e967a4c3209d4fdce1c2dd9",
+    "tool_router.py": "1519d36926a346c67abc4fa6dc66f927d7abbbb2616a7679b83140774daf23a9",
+    "knowledge_retrieval.py": "161a601524a72981dbd08f6a79aec9f4f27606708b3beef442cd47f34b8c06ca",
+    "knowledge_corpus.py": "c531cbf27bae74ed450d9288d04e69bce68a926ae6859bfa51f52338fca2f017",
+    "bm25.py": "e7c2f1f4bcdfe7f64ef2cb86ae8c3e898c1ca43db12a826efa72cd95aa487ebe",
+    "retrieval.py": "2a3f4c248981ea427a175ab6c2a3a24df295b8c339b0bc98b81896a4e6aa995a"
+  },
+  "environment": {
+    "python": "3.11.15",
+    "langgraph": "1.2.11"
+  },
+  "trajectories_file": "agent_trajectories.jsonl"
+}

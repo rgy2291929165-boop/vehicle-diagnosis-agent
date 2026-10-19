@@ -1,0 +1,41 @@
+{
+  "date_local": "2026-10-18",
+  "timezone": "Asia/Shanghai",
+  "artifact_prepared_at": "2026-10-18T13:33:47+08:00",
+  "source_url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+  "section": "CP_a054 / alert meaning",
+  "capture_type": "coach_prepared_noncontiguous_short_excerpt_from_web_tool",
+  "original_full_page_downloaded": false,
+  "official_pdf_downloaded": false,
+  "direct_download_this_url_attempted": false,
+  "excerpt": {
+    "filename": "tesla_cp_a054_20261018_excerpt.html",
+    "sha256": "efa6aa40388d3f17d729d53c99d92079f1bbdf0420d97487ea3b1e2b825d528c",
+    "quoted_word_count": 17
+  },
+  "card": {
+    "filename": "learning/week5/source_review_cp_a054.md",
+    "sha256": "c8cb7e2df6c4b52882cd9ae57a1ccd07bac71b64ec761e2140e31ad709c295bc"
+  },
+  "local_summary": {
+    "filename": "data/documents/w2-tesla-charge-alerts.json",
+    "sha256": "cef71c4bf4619cf8296ed07f0abc16c5a7c616443a8825ae56f7ee6c46318160",
+    "review_scope": "CP_a054_only"
+  },
+  "summary_review": "main_meaning_consistent_but_condition_less_explicit_and_AC_modality_weaker",
+  "source_scope_unknown": [
+    "model_year",
+    "manual_revision",
+    "vehicle_software_version",
+    "publication_or_revision_date"
+  ],
+  "example_answer_author": "coach_not_model",
+  "learner_understanding": "passed_2026-10-18",
+  "protected_files_before": {
+    "data/documents/w2-tesla-charge-alerts.json": "cef71c4bf4619cf8296ed07f0abc16c5a7c616443a8825ae56f7ee6c46318160",
+    "evaluation/week2/freeze_manifest.json": "16e3d44559643dba6760f29ef5e25a0a462c43eb7dcd133e957bab9f74de26ca",
+    "evaluation/week2/questions_draft.jsonl": "4f7bcfbcd97d5353a3546e899acda1b51e16f178acd48ccf315183199f37975c",
+    "evaluation/week2/corpus_manifest.csv": "b8bc8a70d2f51893d89519a044390fc0455b323f2e301af52c8b62ed8cf6c219",
+    "evaluation/week2/splits.json": "989ae277550367a3ff8b9e5309986c39a2dade96bce96ff7a5d253309e2ba96d"
+  }
+}

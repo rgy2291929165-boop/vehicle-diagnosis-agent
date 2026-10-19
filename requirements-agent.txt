@@ -1,0 +1,8 @@
+# 单次只读 Agent HTTP/MCP 运行依赖；不包含早期向量 RAG。
+fastapi==0.141.1
+uvicorn==0.52.4
+pydantic==2.13.4
+langgraph==1.2.11
+langgraph-checkpoint==4.2.0
+langgraph-checkpoint-sqlite==3.1.1
+mcp==2.3.0

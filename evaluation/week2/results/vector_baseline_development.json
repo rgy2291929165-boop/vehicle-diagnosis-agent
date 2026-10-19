@@ -1,0 +1,1627 @@
+{
+  "metrics": {
+    "recall_at_1": 0.78125,
+    "recall_at_3": 0.9375,
+    "recall_at_5": 0.9375,
+    "mrr": 0.8656250000000001
+  },
+  "document_metrics": {
+    "document_recall_at_1": 0.96875,
+    "document_recall_at_3": 1.0,
+    "document_recall_at_5": 1.0
+  },
+  "answerable_count": 32,
+  "no_evidence_count": 8,
+  "no_evidence_candidate_rate": 1.0,
+  "per_question": [
+    {
+      "id": "W2-001",
+      "question": "Model 3 接上充电枪后灯一直是蓝色，这是否代表已经在充电？",
+      "answerable": true,
+      "query_latency_ms": 6.08,
+      "gold_chunk_ids": [
+        "w2-tesla-charge-status:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-charge-status"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-status:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-003",
+      "question": "Model 3 充电口灯常亮琥珀色通常表示什么？",
+      "answerable": true,
+      "query_latency_ms": 5.295,
+      "gold_chunk_ids": [
+        "w2-tesla-charge-status:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-charge-status"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-status:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-normal-sounds:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-004",
+      "question": "Model 3 充电口灯变红并停止充电时，应该先查看哪里的信息？",
+      "answerable": true,
+      "query_latency_ms": 6.402,
+      "gold_chunk_ids": [
+        "w2-tesla-charge-status:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-charge-status"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-status:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-normal-sounds:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-006",
+      "question": "Model 3 的 CP_a054 提示出现时，直流快充会受到什么影响？",
+      "answerable": true,
+      "query_latency_ms": 5.64,
+      "gold_chunk_ids": [
+        "w2-tesla-charge-alerts:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-charge-alerts"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-hot-weather:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-008",
+      "question": "开始 Model 3 电池健康测试前，挡位、电量和活动警报需满足哪些条件？",
+      "answerable": true,
+      "query_latency_ms": 4.304,
+      "gold_chunk_ids": [
+        "w2-tesla-battery-health:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-battery-health"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-battery-health:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-scheduled-charge:1",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-normal-sounds:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-009",
+      "question": "Model 3 做电池健康测试时，可以把乘员独自留在车内使用空调吗？",
+      "answerable": true,
+      "query_latency_ms": 5.355,
+      "gold_chunk_ids": [
+        "w2-tesla-battery-health:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-battery-health"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-battery-health:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-status:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-011",
+      "question": "Model 3 屏幕提示冷却液液位低，车主应自行打开加注盖补液吗？",
+      "answerable": true,
+      "query_latency_ms": 5.873,
+      "gold_chunk_ids": [
+        "w2-tesla-battery-info:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-battery-info"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-normal-sounds:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-014",
+      "question": "Model 3 超充时车底偶有咔哒声，资料描述了什么物理原因？",
+      "answerable": true,
+      "query_latency_ms": 5.219,
+      "gold_chunk_ids": [
+        "w2-tesla-normal-sounds:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-normal-sounds"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-hot-weather:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "first_relevant_rank": 2,
+      "first_relevant_document_rank": 2,
+      "reciprocal_rank": 0.5,
+      "hits": {
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": false,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-017",
+      "question": "2024+ Model 3 的高压电池冷却液标准加注量是多少升？",
+      "answerable": false,
+      "query_latency_ms": 5.54,
+      "ranked_chunk_ids": [
+        "w2-tesla-battery-info:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "returned_candidates": true,
+      "candidate_count": 16
+    },
+    {
+      "id": "W2-018",
+      "question": "Model 3 的 CP_a054 故障对应的充电口锁扣固定螺栓扭矩是多少 N·m？",
+      "answerable": false,
+      "query_latency_ms": 5.898,
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "returned_candidates": true,
+      "candidate_count": 16
+    },
+    {
+      "id": "W2-019",
+      "question": "BMS_a107 的完整高压维修工序和每一步测量数值是什么？",
+      "answerable": false,
+      "query_latency_ms": 5.742,
+      "ranked_chunk_ids": [
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-scheduled-charge:0"
+      ],
+      "returned_candidates": true,
+      "candidate_count": 16
+    },
+    {
+      "id": "W2-020",
+      "question": "哪一台充电桩的序列号导致了这辆 Model 3 的 CP_a053？",
+      "answerable": false,
+      "query_latency_ms": 5.067,
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-cold-weather:1",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "returned_candidates": true,
+      "candidate_count": 16
+    },
+    {
+      "id": "W2-022",
+      "question": "充电口锁扣冻结且充电线拔不出时，车辆屏幕中的哪个功能可用于加热充电口？",
+      "answerable": true,
+      "query_latency_ms": 5.13,
+      "gold_chunk_ids": [
+        "w2-tesla-cold-weather:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-cold-weather"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-hv-components:0"
+      ],
+      "first_relevant_rank": 2,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 0.5,
+      "hits": {
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-023",
+      "question": "手机应用中的哪个功能可以帮助融化充电口锁扣上的冰？",
+      "answerable": true,
+      "query_latency_ms": 5.014,
+      "gold_chunk_ids": [
+        "w2-tesla-cold-weather:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-cold-weather"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-nhtsa-flood-safety:0"
+      ],
+      "first_relevant_rank": 2,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 0.5,
+      "hits": {
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-024",
+      "question": "怎样设置能帮助避免充电口锁扣在寒冷中冻结？",
+      "answerable": true,
+      "query_latency_ms": 5.677,
+      "gold_chunk_ids": [
+        "w2-tesla-cold-weather:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-cold-weather"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-battery-health:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-hv-components:0"
+      ],
+      "first_relevant_rank": 2,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 0.5,
+      "hits": {
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-026",
+      "question": "为什么 Model 3 触摸屏会显示蓝色雪花图标？",
+      "answerable": true,
+      "query_latency_ms": 5.327,
+      "gold_chunk_ids": [
+        "w2-tesla-cold-weather:1"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-cold-weather"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-hot-weather:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-scheduled-charge:1"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-027",
+      "question": "蓝色雪花图标出现时，哪些车辆能力可能受到限制？",
+      "answerable": true,
+      "query_latency_ms": 5.328,
+      "gold_chunk_ids": [
+        "w2-tesla-cold-weather:1"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-cold-weather"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-charge-workflow:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-028",
+      "question": "寒冷天气驾驶后长期停车，资料建议如何利用外部电源维持电池温度？",
+      "answerable": true,
+      "query_latency_ms": 5.058,
+      "gold_chunk_ids": [
+        "w2-tesla-cold-weather:1"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-cold-weather"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-hv-components:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-030",
+      "question": "在 Current Location 创建的预约，到别的地点还能直接使用吗？",
+      "answerable": true,
+      "query_latency_ms": 5.952,
+      "gold_chunk_ids": [
+        "w2-tesla-scheduled-charge:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-scheduled-charge"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-cold-weather:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-hv-components:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-031",
+      "question": "Tesla Supercharger 上创建的预约充电会生效吗？",
+      "answerable": true,
+      "query_latency_ms": 4.832,
+      "gold_chunk_ids": [
+        "w2-tesla-scheduled-charge:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-scheduled-charge"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-charge-workflow:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-hv-components:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-032",
+      "question": "没有打开 Repeat Weekly 时，Model 3 的预约会如何执行？",
+      "answerable": true,
+      "query_latency_ms": 5.549,
+      "gold_chunk_ids": [
+        "w2-tesla-scheduled-charge:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-scheduled-charge"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-normal-sounds:0",
+        "w2-nhtsa-flood-safety:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-034",
+      "question": "即使没有峰谷电价，把预约充电结束时间设为计划出发时间有什么作用？",
+      "answerable": true,
+      "query_latency_ms": 5.111,
+      "gold_chunk_ids": [
+        "w2-tesla-scheduled-charge:1"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-scheduled-charge"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-battery-info:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-hv-components:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-035",
+      "question": "预约预处理会保证车辆在出发前达到怎样的状态？",
+      "answerable": true,
+      "query_latency_ms": 5.267,
+      "gold_chunk_ids": [
+        "w2-tesla-scheduled-charge:1"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-scheduled-charge"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-battery-health:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-hv-components:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-036",
+      "question": "若不设置预处理，低温时车辆会准备车厢空调吗？",
+      "answerable": true,
+      "query_latency_ms": 5.189,
+      "gold_chunk_ids": [
+        "w2-tesla-scheduled-charge:1"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-scheduled-charge"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-hv-components:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-status:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-038",
+      "question": "为什么浸水风险前 Tesla 建议给车辆充至 100%？",
+      "answerable": true,
+      "query_latency_ms": 5.178,
+      "gold_chunk_ids": [
+        "w2-tesla-submerged-vehicle:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-submerged-vehicle"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-submerged-vehicle:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-charge-status:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-039",
+      "question": "无法移车躲避洪水时，与充电设备有关的首个措施是什么？",
+      "answerable": true,
+      "query_latency_ms": 5.647,
+      "gold_chunk_ids": [
+        "w2-tesla-submerged-vehicle:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-submerged-vehicle"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-submerged-vehicle:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-charge-status:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-040",
+      "question": "无法移车时，资料列出的两种降低 Model 3 电量的做法是什么？",
+      "answerable": true,
+      "query_latency_ms": 5.384,
+      "gold_chunk_ids": [
+        "w2-tesla-submerged-vehicle:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-submerged-vehicle"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-charge-status:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-normal-sounds:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-042",
+      "question": "浸水后的 Model 3 在什么条件满足前不应尝试操作？",
+      "answerable": true,
+      "query_latency_ms": 6.017,
+      "gold_chunk_ids": [
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-submerged-vehicle"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-cold-weather:1",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-normal-sounds:0"
+      ],
+      "first_relevant_rank": 10,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 0.1,
+      "hits": {
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": false
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-043",
+      "question": "浸水车辆拖移后，与建筑物或可燃物至少应保持多远距离？",
+      "answerable": true,
+      "query_latency_ms": 5.174,
+      "gold_chunk_ids": [
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-submerged-vehicle"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-cold-weather:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-status:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-044",
+      "question": "Model 3 浸水后，资料要求怎样处理保险事宜？",
+      "answerable": true,
+      "query_latency_ms": 5.452,
+      "gold_chunk_ids": [
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-submerged-vehicle"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-cold-weather:1",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-normal-sounds:0"
+      ],
+      "first_relevant_rank": 2,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 0.5,
+      "hits": {
+        "recall_at_1": false,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-046",
+      "question": "使用 Tesla 充电线打开 Model 3 充电口门前，车辆应处于什么挡位，如何操作？",
+      "answerable": true,
+      "query_latency_ms": 4.6,
+      "gold_chunk_ids": [
+        "w2-tesla-charge-workflow:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-charge-workflow"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-normal-sounds:0",
+        "w2-nhtsa-flood-safety:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-047",
+      "question": "充电口门打不开时，能不能用力掰开？",
+      "answerable": true,
+      "query_latency_ms": 6.203,
+      "gold_chunk_ids": [
+        "w2-tesla-charge-workflow:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-charge-workflow"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-hv-components:0"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-048",
+      "question": "在公共充电站使用适配器时，适配器、车辆充电口和充电站连接器的连接顺序是什么？",
+      "answerable": true,
+      "query_latency_ms": 4.955,
+      "gold_chunk_ids": [
+        "w2-tesla-charge-workflow:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-charge-workflow"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-050",
+      "question": "电池温度不合适时，为什么插好充电枪后不一定立刻开始充电？",
+      "answerable": true,
+      "query_latency_ms": 4.951,
+      "gold_chunk_ids": [
+        "w2-tesla-charge-workflow:0"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-charge-workflow"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-hv-components:0"
+      ],
+      "first_relevant_rank": 10,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 0.1,
+      "hits": {
+        "recall_at_1": false,
+        "recall_at_3": false,
+        "recall_at_5": false
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-051",
+      "question": "充电时能否用高压清洗机冲洗充电口？",
+      "answerable": true,
+      "query_latency_ms": 5.969,
+      "gold_chunk_ids": [
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-workflow:1"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-charge-workflow"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-status:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-052",
+      "question": "为防止他人拔掉充电线，自己拔线前需要满足什么车辆状态？",
+      "answerable": true,
+      "query_latency_ms": 5.112,
+      "gold_chunk_ids": [
+        "w2-tesla-charge-workflow:1"
+      ],
+      "gold_document_ids": [
+        "w2-tesla-charge-workflow"
+      ],
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:1"
+      ],
+      "first_relevant_rank": 1,
+      "first_relevant_document_rank": 1,
+      "reciprocal_rank": 1.0,
+      "hits": {
+        "recall_at_1": true,
+        "recall_at_3": true,
+        "recall_at_5": true
+      },
+      "document_hits": {
+        "document_recall_at_1": true,
+        "document_recall_at_3": true,
+        "document_recall_at_5": true
+      }
+    },
+    {
+      "id": "W2-054",
+      "question": "CP_a053 故障对应的具体公共充电桩序列号是什么？",
+      "answerable": false,
+      "query_latency_ms": 5.43,
+      "ranked_chunk_ids": [
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-cold-weather:1",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-normal-sounds:0"
+      ],
+      "returned_candidates": true,
+      "candidate_count": 16
+    },
+    {
+      "id": "W2-056",
+      "question": "浸水后高压电池绝缘电阻必须达到多少兆欧才允许上电？",
+      "answerable": false,
+      "query_latency_ms": 5.704,
+      "ranked_chunk_ids": [
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-scheduled-charge:0"
+      ],
+      "returned_candidates": true,
+      "candidate_count": 16
+    },
+    {
+      "id": "W2-058",
+      "question": "冻结充电口后手动释放线缆的固定螺栓应以多少 N·m 扭矩复装？",
+      "answerable": false,
+      "query_latency_ms": 5.045,
+      "ranked_chunk_ids": [
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-charge-status:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-submerged-vehicle:1",
+        "w2-tesla-scheduled-charge:0",
+        "w2-nhtsa-flood-safety:0"
+      ],
+      "returned_candidates": true,
+      "candidate_count": 16
+    },
+    {
+      "id": "W2-060",
+      "question": "车辆浸水后保险理赔编号是多少？",
+      "answerable": false,
+      "query_latency_ms": 5.112,
+      "ranked_chunk_ids": [
+        "w2-tesla-submerged-vehicle:1",
+        "w2-nhtsa-flood-safety:0",
+        "w2-tesla-submerged-vehicle:0",
+        "w2-tesla-cold-weather:1",
+        "w2-tesla-hot-weather:0",
+        "w2-tesla-cold-weather:0",
+        "w2-tesla-battery-info:0",
+        "w2-tesla-scheduled-charge:1",
+        "w2-tesla-battery-health:0",
+        "w2-tesla-charge-workflow:1",
+        "w2-tesla-normal-sounds:0",
+        "w2-tesla-charge-workflow:0",
+        "w2-tesla-charge-alerts:0",
+        "w2-tesla-scheduled-charge:0",
+        "w2-tesla-hv-components:0",
+        "w2-tesla-charge-status:0"
+      ],
+      "returned_candidates": true,
+      "candidate_count": 16
+    }
+  ],
+  "run": {
+    "created_at": "2026-09-14T09:04:37.929454+00:00",
+    "split": "development",
+    "retrieval_depth": 16,
+    "latency_ms": {
+      "mean": 5.395,
+      "p50": 5.327,
+      "p95": 6.08
+    },
+    "metadata": {
+      "dataset_version": "week2-v1.0",
+      "model": "BAAI/bge-small-zh-v1.5",
+      "model_revision": "7999e1d3359715c523056ef9478215996d62a620",
+      "normalize_embeddings": true,
+      "chunk_size_characters": 200,
+      "chunk_overlap_characters": 40,
+      "chunk_count": 16,
+      "document_count": 12,
+      "index_build_ms": 375.893,
+      "python_version": "3.11.15",
+      "platform": "macOS-26.4.1-arm64-arm-64bit",
+      "sentence_transformers_version": "6.0.1"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "document_id": "w2-tesla-scheduled-charge",
+    "title": "Model 3 预处理与预约充电",
+    "source": "https://www.tesla.com/ownersmanual/model3/en_gb/GUID-76995CEC-6402-4BFF-99FA-CEFA36E64A19.html",
+    "source_type": "official_summary",
+    "imported_at": "2026-09-14T00:00:00Z",
+    "char_count": 348,
+    "source_version": "Model 3 Owner's Manual, United Kingdom edition; retrieved 2026-09-14",
+    "retrieved_at": "2026-09-14",
+    "translation_note": "基于官方英文页面的中文意译；非原文复制，也不是正式维修工序。"
+  },
+  "content": "Model 3 会按每个创建预约的地点自动保存该地点的预约设置。选择 Current Location 创建的预约，只有回到大致相同的物理位置时才可使用。预约充电不能用于包括 Tesla Supercharger 在内的快速充电设备；在快充设备上创建的充电预约会被忽略。若未开启 Repeat Weekly，车辆只执行一次预约，之后会停用该预约，直到用户手动重新启用。若车辆在预约充电 End by 时间后的六小时内插入充电枪，且没有其他预约，车辆不会自动开始充电。将充电结束时间设为计划出发时间，即使当地没有峰谷电价，也可减少能耗。预处理功能会自动计算何时启动，以确保在设定出发时间前车厢和电池均已完成预处理。若不安排预处理，车辆只会在电池低温到无法充电时为充电而加热电池，不会预处理车厢空调。"
+}

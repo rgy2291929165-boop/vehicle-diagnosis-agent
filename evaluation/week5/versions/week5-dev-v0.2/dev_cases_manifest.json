@@ -1,0 +1,65 @@
+{
+  "dataset_version": "week5-dev-v0.2",
+  "created_at": "2026-10-18T13:40:55+08:00",
+  "purpose": "前 4 条业务输入加 4 条审批边界目标，供后续契约/模型/任务服务实现使用",
+  "author": "coach_at_explicit_user_request",
+  "data_kind": "synthetic_user_input",
+  "case_count": 8,
+  "case_ids": [
+    "W5-D001",
+    "W5-D002",
+    "W5-D003",
+    "W5-D004",
+    "W5-D005",
+    "W5-D006",
+    "W5-D007",
+    "W5-D008"
+  ],
+  "route_counts": {
+    "answer": 1,
+    "needs_info": 1,
+    "needs_human": 1,
+    "pending_approval": 3,
+    "rejected": 1,
+    "submitted": 1
+  },
+  "cases_file": "evaluation/week5/dev_cases.jsonl",
+  "cases_sha256": "5254d7a3d089dd45ba14dbd4cd04ec1a92c16aa56df7750e017bf07c8a48883f",
+  "frozen": false,
+  "business_execution_status": "not_run",
+  "model_calls_for_creation": 0,
+  "live_device_data": false,
+  "external_enterprise_system_access": false,
+  "route_labels_are": "development_targets_not_current_API_status_contract",
+  "preconditions_are": "test_specifications_not_implemented_fixture_loader",
+  "expected_checks_are": "review_requirements_not_implemented_automatic_assertions",
+  "source_evidence_sha256": {
+    "learning/week5/source_review_charge_status.md": "2fc1985d57fca5c78d9d2ff17c3416288012a57cde7d1643f614a7a57b6ef140",
+    "learning/week5/source_review_cp_a054.md": "c8cb7e2df6c4b52882cd9ae57a1ccd07bac71b64ec761e2140e31ad709c295bc"
+  },
+  "evidence_scope": [
+    "charge_port_RED",
+    "CP_a054"
+  ],
+  "CP_a053_included": false,
+  "scope_limits": [
+    "仅做已核对条目下的合成开发场景，不代表真实车辆诊断准确率",
+    "精确车型年份/手册修订号未知，完整网页快照未取得",
+    "D004 无 DTC 的草稿目标需要后续调整旧契约，当前接口未通过这一案例",
+    "D005–D008 是审批/权限/顺序重复提交的开发要求，未据此验证 HTTP 集成、并发或崩溃恢复"
+  ],
+  "separate_from_week2_frozen_test": true,
+  "updated_at": "2026-10-18T13:50:53+08:00",
+  "policy_evidence_sha256": {
+    "learning/week5/adr_001_scope.md": "b7481fe3886685faf9d71ae9896fb38ae39a0de0f10cdf8ba810790a8247d7fd"
+  },
+  "previous_version": {
+    "dataset_version": "week5-dev-v0.1",
+    "cases_file": "evaluation/week5/versions/week5-dev-v0.1/dev_cases.jsonl",
+    "cases_sha256": "5f71c4b4db49e7d26ba204d49e55938f840e49481c53e02196beab7b14d1e26e",
+    "manifest_file": "evaluation/week5/versions/week5-dev-v0.1/dev_cases_manifest.json",
+    "manifest_sha256": "16dcc413a9431238ed50fcb1ea75fc3ef065c552e8d31bf9e9d801358fbac87a",
+    "preserved_prefix_bytes": 3883,
+    "first_four_preserved_byte_for_byte": true
+  }
+}

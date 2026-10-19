@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "document_id": "w2-tesla-charge-alerts",
+    "title": "Model 3 充电故障提示 CP_a053 与 CP_a054",
+    "source": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+    "source_type": "official_summary",
+    "imported_at": "2026-09-14T06:38:56.861823Z",
+    "char_count": 114,
+    "source_version": "Model 3 Owner Manual 2024+, North America; retrieved 2026-09-14",
+    "retrieved_at": "2026-09-14",
+    "translation_note": "基于官方英文页面的中文意译；非原文复制；车型与地区范围见版本字段"
+  },
+  "content": "Model 3 出现 CP_a053 时，充电设备尚未就绪；可能是充电站无电，也可能是站车之间的控制导引信号中断。\nModel 3 出现 CP_a054 时，充电口锁扣未扣合；交流充电可能被限制到 16A，直流快充或超充不可用。"
+}

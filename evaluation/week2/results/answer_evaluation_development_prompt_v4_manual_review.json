@@ -1,0 +1,18 @@
+{
+  "source_result": "answer_evaluation_development_prompt_v4.json",
+  "review_scope": "开发集 12 道固定抽样题；逐项检查关键主张是否由其紧邻引用的完整片段直接支持。",
+  "results": [
+    {"id": "W2-001", "unsupported_claim": false, "manual_review_note": "蓝灯仅表示已连接、尚未开始充电，引用完整且直接支持。"},
+    {"id": "W2-006", "unsupported_claim": false, "manual_review_note": "CP_a054 时直流快充不可用，引用完整且直接支持。"},
+    {"id": "W2-011", "unsupported_claim": false, "manual_review_note": "不自行打开冷却液加注盖或加液，引用完整且直接支持。"},
+    {"id": "W2-024", "unsupported_claim": false, "manual_review_note": "Schedule 设置可预防锁扣冻结，引用完整的 :0 片段且没有加入额外预防性概括。"},
+    {"id": "W2-030", "unsupported_claim": false, "manual_review_note": "Current Location 预约只在相近物理位置可用，引用完整且直接支持。"},
+    {"id": "W2-042", "unsupported_claim": false, "manual_review_note": "不再浸水、可安全接近且授权维修店检查前不操作车辆，引用片段直接支持。"},
+    {"id": "W2-044", "unsupported_claim": false, "manual_review_note": "浸水后按事故车辆对待并联系保险公司，引用完整且直接支持。"},
+    {"id": "W2-050", "unsupported_claim": false, "manual_review_note": "电池需要加热或冷却会延迟充电开始，引用完整且直接支持。"},
+    {"id": "W2-017", "unsupported_claim": false, "manual_review_note": "正确拒答，无事实主张。"},
+    {"id": "W2-018", "unsupported_claim": false, "manual_review_note": "正确拒答，无事实主张。"},
+    {"id": "W2-019", "unsupported_claim": false, "manual_review_note": "正确拒答，无事实主张。"},
+    {"id": "W2-020", "unsupported_claim": false, "manual_review_note": "正确拒答，无事实主张。"}
+  ]
+}

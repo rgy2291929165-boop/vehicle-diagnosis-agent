@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "document_id": "w2-tesla-cold-weather",
+    "title": "Model 3 寒冷天气充电与电池准备",
+    "source": "https://www.tesla.com/ownersmanual/model3/en_mo/GUID-F907200E-A619-4A95-A0CF-94E0D03BEBEF.html",
+    "source_type": "official_summary",
+    "imported_at": "2026-09-14T00:00:00Z",
+    "char_count": 354,
+    "source_version": "Model 3 Owner's Manual, Macao edition; retrieved 2026-09-14",
+    "retrieved_at": "2026-09-14",
+    "translation_note": "基于官方英文页面的中文意译；非原文复制，也不是正式维修工序。"
+  },
+  "content": "Tesla 建议在出发前至少 30–45 分钟启用空调设置进行预处理，实际所需时间会受室外温度等因素影响。充电口锁扣冻结且充电线拔不出时，可在车辆屏幕选择 Controls > Service > Inlet Heater。也可通过手机应用启用 Defrost Car，以融化充电口锁扣上的冰。使用 Schedule 设置可帮助预防充电口锁扣冻结。锁扣冻结时可能无法锁住充电线，但即使锁扣没有扣合，车辆仍可能以较慢的交流充电速率充电。电池因低温导致部分存储能量暂不可用时，触摸屏会显示蓝色雪花图标，电池表中不可用部分显示为蓝色。蓝色雪花图标出现时，再生制动、加速和充电速率可能受限；电池充分升温后图标消失。寒冷天气驾驶后，若车辆不用，Tesla 建议保持接入充电设备，以利用充电设备而非电池本身维持电池温度。"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "hybrid_rrf",
+  "fusion": "reciprocal_rank_fusion",
+  "k": 60,
+  "weights": {
+    "vector": 1.0,
+    "bm25": 1.0
+  },
+  "notes": "只融合名次，不直接相加两种检索器的原始分数；参数在开发集试验前固定。"
+}

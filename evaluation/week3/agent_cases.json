@@ -1,0 +1,55 @@
+{
+  "version": "week3-workflow-v1",
+  "paths": {
+    "dtc": ["check_information_completeness", "route_selected_tool", "retrieve_knowledge", "format_diagnosis"],
+    "direct": ["check_information_completeness", "route_selected_tool", "format_diagnosis"],
+    "ask": ["check_information_completeness", "ask_clarifying_question"],
+    "stop": ["check_information_completeness", "route_selected_tool"]
+  },
+  "corpora": {
+    "teaching": [
+      {"chunk_id": "teach:0", "document_id": "teach", "text": "P0AA6 教学片段，仅用于验证检索和引用流程。", "source": "demo/fixture"}
+    ],
+    "lowercase": [
+      {"chunk_id": "lower:0", "document_id": "lower", "text": "p0aa6 教学片段，仅用于验证大小写匹配。", "source": "demo/fixture"}
+    ],
+    "empty": [],
+    "generic": [
+      {"chunk_id": "generic:0", "document_id": "generic", "text": "绝缘故障需要查看仪表提示。", "source": "demo/fixture"}
+    ],
+    "similar": [
+      {"chunk_id": "similar:0", "document_id": "similar", "text": "P0AA60 绝缘故障检查。", "source": "demo/fixture"}
+    ],
+    "wrong": [
+      {"chunk_id": "wrong:0", "document_id": "wrong", "text": "P0123 绝缘故障检查。", "source": "demo/fixture"}
+    ],
+    "four": [
+      {"chunk_id": "many:0", "document_id": "many", "text": "P0AA6 教学片段一，仅用于验证引用。", "source": "demo/fixture"},
+      {"chunk_id": "many:1", "document_id": "many", "text": "P0AA6 教学片段二，仅用于验证引用。", "source": "demo/fixture"},
+      {"chunk_id": "many:2", "document_id": "many", "text": "P0AA6 教学片段三，仅用于验证引用。", "source": "demo/fixture"},
+      {"chunk_id": "many:3", "document_id": "many", "text": "P0AA6 教学片段四，仅用于验证引用。", "source": "demo/fixture"}
+    ]
+  },
+  "cases": [
+    {"id": "A01", "label": "教学片段命中", "corpus": "teaching", "input": {}, "expect": {"status": "ok", "tool_call_count": 1, "citation_count": 1, "path": "dtc"}},
+    {"id": "A02", "label": "输入故障码去空白并统一大小写", "corpus": "teaching", "input": {"dtc_codes": [" p0aa6 "]}, "expect": {"status": "ok", "tool_call_count": 1, "citation_count": 1, "path": "dtc"}},
+    {"id": "A03", "label": "候选正文故障码为小写", "corpus": "lowercase", "input": {}, "expect": {"status": "ok", "tool_call_count": 1, "citation_count": 1, "path": "dtc"}},
+    {"id": "A04", "label": "最多返回三个引用", "corpus": "four", "input": {}, "expect": {"status": "ok", "tool_call_count": 1, "citation_count": 3, "path": "dtc"}},
+    {"id": "A05", "label": "真实资料缺少 P0AA6", "corpus": "real", "input": {}, "expect": {"status": "no_evidence", "tool_call_count": 1, "citation_count": 0, "path": "dtc"}},
+    {"id": "A06", "label": "空资料库", "corpus": "empty", "input": {}, "expect": {"status": "no_evidence", "tool_call_count": 1, "citation_count": 0, "path": "dtc"}},
+    {"id": "A07", "label": "通用词命中但缺少故障码", "corpus": "generic", "input": {}, "expect": {"status": "no_evidence", "tool_call_count": 1, "citation_count": 0, "path": "dtc"}},
+    {"id": "A08", "label": "相似故障码不能替代本次故障码", "corpus": "similar", "input": {}, "expect": {"status": "no_evidence", "tool_call_count": 1, "citation_count": 0, "path": "dtc"}},
+    {"id": "A09", "label": "其他故障码不能替代本次故障码", "corpus": "wrong", "input": {}, "expect": {"status": "no_evidence", "tool_call_count": 1, "citation_count": 0, "path": "dtc"}},
+    {"id": "A10", "label": "车辆历史查询", "corpus": "real", "input": {"requested_tool": "lookup_vehicle_history"}, "expect": {"status": "ok", "tool_call_count": 1, "citation_count": 0, "path": "direct"}},
+    {"id": "A11", "label": "库存查询", "corpus": "real", "input": {"requested_tool": "lookup_inventory"}, "expect": {"status": "ok", "tool_call_count": 1, "citation_count": 0, "path": "direct"}},
+    {"id": "A12", "label": "车辆标识为空并清理旧引用", "corpus": "real", "input": {"vehicle_id": "   ", "citations": [{"chunk_id": "old:0", "document_id": "old", "source": "demo/old"}]}, "expect": {"status": "needs_info", "tool_call_count": 0, "citation_count": 0, "path": "ask", "missing_fields": ["vehicle_id"]}},
+    {"id": "A13", "label": "故障现象为空", "corpus": "real", "input": {"symptom": "   "}, "expect": {"status": "needs_info", "tool_call_count": 0, "citation_count": 0, "path": "ask", "missing_fields": ["symptom"]}},
+    {"id": "A14", "label": "故障码缺失", "corpus": "real", "input": {"dtc_codes": []}, "expect": {"status": "needs_info", "tool_call_count": 0, "citation_count": 0, "path": "ask", "missing_fields": ["dtc_codes"]}},
+    {"id": "A15", "label": "多个必填字段缺失", "corpus": "real", "input": {"vehicle_id": "", "symptom": "", "dtc_codes": []}, "expect": {"status": "needs_info", "tool_call_count": 0, "citation_count": 0, "path": "ask", "missing_fields": ["vehicle_id", "symptom", "dtc_codes"]}},
+    {"id": "A16", "label": "库存查询缺少零件号", "corpus": "real", "input": {"requested_tool": "lookup_inventory", "part_number": "   "}, "expect": {"status": "needs_info", "tool_call_count": 0, "citation_count": 0, "path": "ask", "missing_fields": ["part_number"]}},
+    {"id": "A17", "label": "DTC 达到预算上限并清理旧引用", "corpus": "real", "input": {"tool_call_count": 1, "max_tool_calls": 1, "citations": [{"chunk_id": "old:0", "document_id": "old", "source": "demo/old"}]}, "expect": {"status": "stopped", "tool_call_count": 1, "citation_count": 0, "path": "stop", "stop_reason": "tool_call_limit"}},
+    {"id": "A18", "label": "车辆历史调用达到预算上限", "corpus": "real", "input": {"requested_tool": "lookup_vehicle_history", "tool_call_count": 2}, "expect": {"status": "stopped", "tool_call_count": 2, "citation_count": 0, "path": "stop", "stop_reason": "tool_call_limit"}},
+    {"id": "A19", "label": "库存调用达到三次预算上限", "corpus": "real", "input": {"requested_tool": "lookup_inventory", "tool_call_count": 3, "max_tool_calls": 3}, "expect": {"status": "stopped", "tool_call_count": 3, "citation_count": 0, "path": "stop", "stop_reason": "tool_call_limit"}},
+    {"id": "A20", "label": "重复调用 DTC 工具", "corpus": "teaching", "mode": "repeat", "input": {}, "expect": {"status": "stopped", "tool_call_count": 1, "citation_count": 0, "path": "stop", "stop_reason": "duplicate_tool_call"}}
+  ]
+}

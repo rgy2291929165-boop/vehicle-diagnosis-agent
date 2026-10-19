@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "document_id": "w2-tesla-battery-info",
+    "title": "Model 3 高压电池与冷却液提示",
+    "source": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-7FE78D73-0A17-47C4-B21B-54F641FFAEF4.html",
+    "source_type": "official_summary",
+    "imported_at": "2026-09-14T06:38:56.861823Z",
+    "char_count": 106,
+    "source_version": "Model 3 Owner Manual 2024+, North America; retrieved 2026-09-14",
+    "retrieved_at": "2026-09-14",
+    "translation_note": "基于官方英文页面的中文意译；非原文复制；车型与地区范围见版本字段"
+  },
+  "content": "Model 3 电池不需要车主维护；触摸屏提示冷却液液位低时，应通过移动应用预约服务，不应自行打开冷却液加注盖或加液。\n电池电量降至 0% 后如果长期不接充电设备，低压电池可能需要搭电或更换，并可能损伤高压电池。"
+}

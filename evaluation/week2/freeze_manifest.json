@@ -1,0 +1,25 @@
+{
+  "dataset_version": "week2-v1.0",
+  "frozen_at": "2026-09-14",
+  "purpose": "第二周检索评测；冻结测试集只用于最终方案比较。",
+  "included_documents": 12,
+  "questions": {
+    "total": 60,
+    "answerable": 48,
+    "no_evidence": 12,
+    "development": 40,
+    "frozen_test": 20
+  },
+  "retrieval_preprocessing": {
+    "chunk_size_characters": 200,
+    "chunk_overlap_characters": 40,
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_normalized": true
+  },
+  "files_sha256": {
+    "questions_draft.jsonl": "4f7bcfbcd97d5353a3546e899acda1b51e16f178acd48ccf315183199f37975c",
+    "corpus_manifest.csv": "b8bc8a70d2f51893d89519a044390fc0455b323f2e301af52c8b62ed8cf6c219",
+    "splits.json": "989ae277550367a3ff8b9e5309986c39a2dade96bce96ff7a5d253309e2ba96d"
+  },
+  "integrity_rule": "运行评测前必须重新计算这三个文件的 SHA-256；任何变化都要建立新版本，不得覆盖 week2-v1.0 的冻结集合。"
+}

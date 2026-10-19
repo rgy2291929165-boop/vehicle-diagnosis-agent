@@ -1,0 +1,70 @@
+{
+  "verified_at": "2026-10-19T16:54:20.342867+08:00",
+  "code_snapshot": "2026-10-19 W5 D4",
+  "python": "3.11.15",
+  "platform": "Darwin",
+  "versions": {
+    "pytest": "9.1.1",
+    "fastapi": "0.141.1",
+    "pydantic": "2.13.4",
+    "langgraph": "1.2.11",
+    "mcp": "2.3.0",
+    "httpx": "0.28.1"
+  },
+  "test_partitions": {
+    "agent_ci": {
+      "tests": 492,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "legacy_rag": {
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "total_tests": 504,
+  "test_partitions_disjoint": true,
+  "commands": [
+    "python scripts/run_agent_ci.py --output-dir <validation>/agent-ci",
+    "python -m pytest tests/test_api.py tests/test_llm.py -q -p no:cacheprovider --junitxml=<validation>/legacy-pytest.xml"
+  ],
+  "environment_flags": [
+    "PYTHONDONTWRITEBYTECODE=1",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1",
+    "HF_HUB_OFFLINE=1",
+    "TRANSFORMERS_OFFLINE=1"
+  ],
+  "workflow_acceptance": {
+    "version": "week3-workflow-v1",
+    "scope": "模拟工具、候选检索、引用与工作流控制；不评估实车诊断正确率",
+    "total": 20,
+    "passed": 20,
+    "failed": 0,
+    "corpus_groups": {
+      "real_corpus_input": {
+        "total": 11,
+        "passed": 11
+      },
+      "fixture_corpus_input": {
+        "total": 9,
+        "passed": 9
+      }
+    }
+  },
+  "integrity": {
+    "week2_freeze_unchanged": true,
+    "included_corpus_hashes_match": true,
+    "reviewed_source_document_review_excerpt_hashes_match": true
+  },
+  "new_live_model_requests": 0,
+  "cloud_ci_verified": false,
+  "container_rebuilt_this_turn": false,
+  "notes": [
+    "Tests mock model responses; MCP tests also use real local subprocesses.",
+    "20 workflow cases are not the 20 unexecuted W5 end-to-end business scenarios.",
+    "No real vehicle, enterprise-system or multi-agent accuracy claim."
+  ]
+}

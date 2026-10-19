@@ -1,0 +1,93 @@
+{
+  "inventory_version": "week5-sources-v1",
+  "created_at": "2026-10-18T14:06:56+08:00",
+  "sources": [
+    {
+      "source_id": "w5-red",
+      "local_document_id": "w2-tesla-charge-status",
+      "local_document_path": "data/documents/w2-tesla-charge-status.json",
+      "local_document_sha256": "47874503b688f4f6d659cff86eaa56698eadad11c6e6fa19222c8df9b3b3f1e5",
+      "official_url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+      "section": "Charge Port Light / RED",
+      "material_kind": "official_source_chinese_summary_with_coach_review",
+      "verified_claims": [
+        "红灯提示检测到故障",
+        "充电已停止",
+        "查看触摸屏警报"
+      ],
+      "review_path": "learning/week5/source_review_charge_status.md",
+      "review_sha256": "2fc1985d57fca5c78d9d2ff17c3416288012a57cde7d1643f614a7a57b6ef140",
+      "offline_excerpt_path": "evaluation/week5/sources/tesla_charge_status_20261018_excerpt.html",
+      "offline_excerpt_sha256": "bda8aeefb935d934367dc890121002134c5d1d97b239e92a20ed6739f67fccee",
+      "excerpt_kind": "coach_prepared_limited_excerpt_not_original_full_page",
+      "source_review_date": "2026-10-18",
+      "old_metadata_scope_claim": "Model 3 Owner Manual 2024+, North America; retrieved 2026-09-14",
+      "confirmed_scope": [
+        "Model 3 page title",
+        "English target text"
+      ],
+      "scope_hints": [
+        "en_us URL locale"
+      ],
+      "unknown_scope": [
+        "model_year_range",
+        "manual_revision",
+        "applicable_vehicle_software_version",
+        "publication_or_revision_date"
+      ],
+      "permitted_use": "explain_explicitly_selected_source_or_record_user_report_for_human_review",
+      "personalized_vehicle_applicability": "not_verified",
+      "device_fault_confirmation_allowed": false
+    },
+    {
+      "source_id": "w5-cp_a054",
+      "local_document_id": "w2-tesla-charge-alerts",
+      "local_document_path": "data/documents/w2-tesla-charge-alerts.json",
+      "local_document_sha256": "cef71c4bf4619cf8296ed07f0abc16c5a7c616443a8825ae56f7ee6c46318160",
+      "official_url": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+      "section": "CP_a054 / alert meaning",
+      "material_kind": "official_source_chinese_summary_with_coach_review",
+      "verified_claims": [
+        "充电口锁扣未能锁住充电线",
+        "锁扣未扣合时交流充电限至 16A",
+        "同一条件下直流快充/超充不可用"
+      ],
+      "review_path": "learning/week5/source_review_cp_a054.md",
+      "review_sha256": "c8cb7e2df6c4b52882cd9ae57a1ccd07bac71b64ec761e2140e31ad709c295bc",
+      "offline_excerpt_path": "evaluation/week5/sources/tesla_cp_a054_20261018_excerpt.html",
+      "offline_excerpt_sha256": "efa6aa40388d3f17d729d53c99d92079f1bbdf0420d97487ea3b1e2b825d528c",
+      "excerpt_kind": "coach_prepared_limited_excerpt_not_original_full_page",
+      "source_review_date": "2026-10-18",
+      "old_metadata_scope_claim": "Model 3 Owner Manual 2024+, North America; retrieved 2026-09-14",
+      "confirmed_scope": [
+        "Model 3 page title",
+        "English target text"
+      ],
+      "scope_hints": [
+        "en_us URL locale"
+      ],
+      "unknown_scope": [
+        "model_year_range",
+        "manual_revision",
+        "applicable_vehicle_software_version",
+        "publication_or_revision_date"
+      ],
+      "permitted_use": "explain_explicitly_selected_source_or_record_user_report_for_human_review",
+      "personalized_vehicle_applicability": "not_verified",
+      "device_fault_confirmation_allowed": false
+    }
+  ],
+  "current_positive_scope": [
+    "charge_port_RED",
+    "CP_a054"
+  ],
+  "personalized_fit_must_not_be_assumed": true,
+  "CP_a053": {
+    "status": "deferred_until_source_review",
+    "included_in_current_positive_acceptance": false,
+    "blocking_for_source_scoped_contract_work": false
+  },
+  "week5_new_source_assets_ingested_into_runtime": false,
+  "week2_frozen_files_modified": false,
+  "source_integrity_meaning": "hash_checks_local_file_bytes_not_official_digital_signature"
+}

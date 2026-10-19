@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "document_id": "w2-tesla-charge-workflow",
+    "title": "Model 3 充电接口与插拔流程",
+    "source": "https://www.tesla.com/ownersmanual/model3/en_us/GUID-BEE08D47-0CE0-4BDD-83F2-9854FB3D578F.html",
+    "source_type": "official_summary",
+    "imported_at": "2026-09-14T00:00:00Z",
+    "char_count": 281,
+    "source_version": "Model 3 Owner's Manual 2024+, North America; retrieved 2026-09-14",
+    "retrieved_at": "2026-09-14",
+    "translation_note": "基于官方英文页面的中文意译；非原文复制，也不是正式维修工序。"
+  },
+  "content": "Model 3 充电口位于车辆左侧、后尾灯组件的一扇门后。使用 Tesla 充电线时，车辆处于 P 挡后可按一下充电线按钮打开充电口门。不要强行打开充电口门。使用公共充电站时，应先将合适的适配器插入车辆充电口，再把充电站的连接器接到适配器上。连接器正确插入后，车辆会锁住连接器并切换至 P 挡；如电池需要加热或冷却，充电开始前可能有延迟。充电时不要将高压液体喷向充电口，例如不要用高压清洗机冲洗。为防止他人擅自拔线，充电线锁扣会保持锁住；拔线前 Model 3 必须解锁或识别到钥匙。车辆插着充电设备但未主动充电时，通常会从充电设备而不是电池取电来支持车载用电。"
+}

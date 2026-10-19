@@ -1,0 +1,27 @@
+{
+  "name": "answer_evaluation_development",
+  "split": "development",
+  "retriever": "bm25_baseline",
+  "retrieval_depth": 3,
+  "question_ids": [
+    "W2-001",
+    "W2-006",
+    "W2-011",
+    "W2-024",
+    "W2-030",
+    "W2-042",
+    "W2-044",
+    "W2-050",
+    "W2-017",
+    "W2-018",
+    "W2-019",
+    "W2-020"
+  ],
+  "rubric": {
+    "citation_correct": "引用是否属于标注文档",
+    "citation_has_complete_evidence": "引用是否包含完整标注证据片段",
+    "unsupported_claim": "人工判断；true 表示有资料不支持的关键主张",
+    "no_evidence_refusal_correct": "无证据题是否只输出 NO_EVIDENCE",
+    "format_valid": "有证据题须有内联片段引用；无证据题不得有引用"
+  }
+}

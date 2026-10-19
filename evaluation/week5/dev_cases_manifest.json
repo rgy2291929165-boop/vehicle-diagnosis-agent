@@ -1,0 +1,106 @@
+{
+  "dataset_version": "week5-dev-v0.3",
+  "created_at": "2026-10-18T13:40:55+08:00",
+  "purpose": "20 条合成开发案例，约束来源解释、补问、人工复核、审批、提交与故障路径",
+  "author": "coach_at_explicit_user_request",
+  "data_kind": "synthetic_user_input",
+  "case_count": 20,
+  "case_ids": [
+    "W5-D001",
+    "W5-D002",
+    "W5-D003",
+    "W5-D004",
+    "W5-D005",
+    "W5-D006",
+    "W5-D007",
+    "W5-D008",
+    "W5-D009",
+    "W5-D010",
+    "W5-D011",
+    "W5-D012",
+    "W5-D013",
+    "W5-D014",
+    "W5-D015",
+    "W5-D016",
+    "W5-D017",
+    "W5-D018",
+    "W5-D019",
+    "W5-D020"
+  ],
+  "route_counts": {
+    "answer": 4,
+    "needs_info": 4,
+    "needs_human": 5,
+    "pending_approval": 4,
+    "rejected": 1,
+    "submitted": 2
+  },
+  "cases_file": "evaluation/week5/dev_cases.jsonl",
+  "cases_sha256": "d194c60a748f3cd262a4553c1ef6ae5d5631f08fc86107de9c185ca89a00db42",
+  "frozen": false,
+  "business_execution_status": "not_run",
+  "model_calls_for_creation": 0,
+  "live_device_data": false,
+  "external_enterprise_system_access": false,
+  "route_labels_are": "development_targets_not_current_API_status_contract",
+  "preconditions_are": "test_specifications_not_implemented_fixture_loader",
+  "expected_checks_are": "review_requirements_not_implemented_automatic_assertions",
+  "source_evidence_sha256": {
+    "learning/week5/source_review_charge_status.md": "2fc1985d57fca5c78d9d2ff17c3416288012a57cde7d1643f614a7a57b6ef140",
+    "learning/week5/source_review_cp_a054.md": "c8cb7e2df6c4b52882cd9ae57a1ccd07bac71b64ec761e2140e31ad709c295bc"
+  },
+  "evidence_scope": [
+    "charge_port_RED",
+    "CP_a054"
+  ],
+  "CP_a053_included": false,
+  "scope_limits": [
+    "仅做已核对条目下的合成开发场景，不代表真实车辆诊断准确率",
+    "精确车型年份/手册修订号未知，完整网页快照未取得",
+    "D004 无 DTC 的草稿目标需要后续调整旧契约，当前接口未通过这一案例",
+    "D005–D008 是审批/权限/顺序重复提交的开发要求，未据此验证 HTTP 集成、并发或崩溃恢复",
+    "D016 的冲突材料是模拟 fixture，不代表厂家真实资料冲突",
+    "D017/D018 是未执行的模拟模型故障，不冒充真实超时或解析失败运行证据",
+    "D019 内容变更门禁与 D020 提交效果仍为开发目标，未验证新任务 API"
+  ],
+  "separate_from_week2_frozen_test": true,
+  "updated_at": "2026-10-18T14:00:38+08:00",
+  "policy_evidence_sha256": {
+    "learning/week5/adr_001_scope.md": "b7481fe3886685faf9d71ae9896fb38ae39a0de0f10cdf8ba810790a8247d7fd"
+  },
+  "previous_version": {
+    "dataset_version": "week5-dev-v0.2",
+    "cases_file": "evaluation/week5/versions/week5-dev-v0.2/dev_cases.jsonl",
+    "cases_sha256": "5254d7a3d089dd45ba14dbd4cd04ec1a92c16aa56df7750e017bf07c8a48883f",
+    "manifest_file": "evaluation/week5/versions/week5-dev-v0.2/dev_cases_manifest.json",
+    "manifest_sha256": "91965a92105595c61a76ccd39ce87353d2c733fd8211ea57bbd39b31702bd13d",
+    "preserved_prefix_bytes": 7864,
+    "first_eight_preserved_byte_for_byte": true
+  },
+  "version_history": [
+    {
+      "dataset_version": "week5-dev-v0.1",
+      "cases_file": "evaluation/week5/versions/week5-dev-v0.1/dev_cases.jsonl",
+      "cases_sha256": "5f71c4b4db49e7d26ba204d49e55938f840e49481c53e02196beab7b14d1e26e",
+      "manifest_file": "evaluation/week5/versions/week5-dev-v0.1/dev_cases_manifest.json",
+      "manifest_sha256": "16dcc413a9431238ed50fcb1ea75fc3ef065c552e8d31bf9e9d801358fbac87a",
+      "preserved_prefix_bytes": 3883,
+      "first_four_preserved_byte_for_byte": true
+    },
+    {
+      "dataset_version": "week5-dev-v0.2",
+      "cases_file": "evaluation/week5/versions/week5-dev-v0.2/dev_cases.jsonl",
+      "cases_sha256": "5254d7a3d089dd45ba14dbd4cd04ec1a92c16aa56df7750e017bf07c8a48883f",
+      "manifest_file": "evaluation/week5/versions/week5-dev-v0.2/dev_cases_manifest.json",
+      "manifest_sha256": "91965a92105595c61a76ccd39ce87353d2c733fd8211ea57bbd39b31702bd13d",
+      "preserved_prefix_bytes": 7864,
+      "first_eight_preserved_byte_for_byte": true
+    }
+  ],
+  "simulated_injection_case_ids": [
+    "W5-D016",
+    "W5-D017",
+    "W5-D018"
+  ],
+  "injections_executed": false
+}
